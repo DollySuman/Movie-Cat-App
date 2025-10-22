@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="app.js">
     <style>
+
+        body{
+            background-color: rgb(185, 94, 109);
+        }
+
+
+
         * {
             margin: 0;
             padding: 0;
@@ -15,9 +22,11 @@
 
         nav {
             background-color: rgb(61, 142, 138);
+            position: sticky;
+            top: 0px;
         }
 
-       nav ul {
+        nav ul {
             display: flex;
             gap: 80px;
             justify-content: space-around;
@@ -40,6 +49,28 @@
         ul li a {
             text-decoration: none;
         }
+
+        #choice {}
+
+        .footer {
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin-bottom: 20px;
+
+        }
+
+        .container {
+            position: absolute;
+            bottom: 30px;
+            width: 100%;
+            left: 30px;
+
+        }
+
+        footer{
+            width: 100%;
+        }
     </style>
 </head>
 
@@ -57,10 +88,48 @@
 
     <main>
 
+        <h1>Choose your genre</h1>
+        <div class="drop">
+            <select name="Genre" id="choice">
+                <option value="comedy">Comedy</option>
+                <option value="romance">Romance</option>
+                <option value="thriller">Thriller</option>
+                <option value="rom-com">Rom-Com</option>
+            </select>
+        </div>
+
+        <div class="suggestion">
+            <h3>Your suggestion is ready. Hope you enjoy it</h3>
+
+        </div>
+
+        <div class="image">
+            <img src="" alt="">
+        </div>
     </main>
 
     <footer>
+        <div class="container">
+            <div class="footer">
 
+                <div class="details">
+
+                    <div>Work</div>
+                    <div>About</div>
+                    <div>Services</div>
+                    <div>Blog</div>
+                </div>
+
+                <div class="connect">
+                    <div>FaceBook</div>
+                    <div>Instagram</div>
+                    <div>Twitter</div>
+                    <div>LinkedIn</div>
+                </div>
+            </div>
+            
+
+        </div>
     </footer>
 </body>
 
