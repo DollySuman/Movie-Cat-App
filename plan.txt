@@ -1,0 +1,51 @@
+If your goal is to learn and strengthen fundamentals:
+
+✅ Start with HTML, CSS, and vanilla JS first.
+
+Build a simple frontend-only version that fetches movie data from the TMDB/OMDB API and displays it.
+
+No backend, no database — just:
+
+A search bar
+
+Movie cards
+
+Favorite list stored in localStorage
+
+🧠 You’ll solidify:
+
+API calls (using fetch)
+
+DOM manipulation
+
+Layout design
+
+LocalStorage use
+
+Once this is working → move to React + Tailwind.
+
+⚡ If your goal is to become confident in full-stack dev quickly:
+
+✅ Start directly with React + Tailwind.
+
+Since you’ve already done a full-stack course, you’ll get more out of practicing component-based design and API handling in React.
+
+Tailwind will speed up your UI work.
+
+🧠 You’ll strengthen:
+
+React state & props
+
+API integration
+
+Component reuse
+
+Styling workflow (Tailwind)
+
+Future scalability for backend integration
+
+💬 My suggestion for you:
+
+Since you’ve already watched a full-stack course, skip the plain HTML-CSS stage —
+👉 start directly with React + Tailwind, but keep it frontend-only at first (no backend).
+Once that’s running, you can add your Node/Express + MongoDB backend later for login and favorites.
