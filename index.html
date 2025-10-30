@@ -120,6 +120,11 @@
             justify-content: center;
             align-items: center;
         }
+
+        a{
+            color: aqua;
+        }
+
     </style>
 </head>
 
@@ -139,14 +144,10 @@
     <main>
         <div class="head">
 
-            <h1>Choose your genre</h1>
+            <h1>Welcome to the Movie Cat </h1>
             <div class="drop">
-                <select name="Genre" id="choice">
-                    <option value="comedy">Comedy</option>
-                    <option value="romance">Romance</option>
-                    <option value="thriller">Thriller</option>
-                    <option value="rom-com">Rom-Com</option>
-                </select>
+               <input id="inp" type="text" placeholder="Enter The Movie Name">
+               <button id="search" >Search Movie</button>
             </div>
             
             <div class="suggestion">
