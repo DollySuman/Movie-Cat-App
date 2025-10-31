@@ -34,6 +34,9 @@
 
 function getMovie() {
    const mname =  document.getElementById("inp").value.trim();
+   if(!mname){
+    return;
+   }
 
 
 const url = `https://imdb.iamidiotareyoutoo.com/search?q=${mname}`
@@ -42,9 +45,11 @@ fetch(url)
 .then(res=> res.json())
 .then(data => {
     console.log(data)
+    document.querySelector(".results").innerHTML = ""
+    
     data.description.forEach(movie => {
 
-        document.querySelector(".head").innerHTML += `<div class="card">
+        document.querySelector(".results").innerHTML += `<div class="card">
                 <div class="moviename">
                     <h1>${movie["#AKA"]}</h1>
                     <p> Starring ${movie["#ACTORS"]} </p>
