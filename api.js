@@ -25,10 +25,14 @@
 // })
 
 
-   document.getElementById("search").addEventListener("click",getMovie)
+   document.getElementById("search").addEventListener("click",e=>{
+    getMovie();
+    document.getElementById("inp").value = "";
+   })
    document.getElementById("inp").addEventListener("keypress", e => {
     if(e.key === "Enter"){
         getMovie();
+        document.getElementById("inp").value = "";
     }
    })
 
